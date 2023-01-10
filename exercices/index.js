@@ -21,15 +21,25 @@ let times = [1, 2, 3];
 
 
 function truc(param1) {
-    for (let i = 0; i < param1.length; i++) {
+    // for (let i = 0; i < param1.length; i++) {
 
 
         let timeoutId = setTimeout(function() {
-             console.log(param1[i]+ "seconde de delais")
-        }, param1[i]*1000);
+             console.log(param1[0]+ "seconde de delais")
+             
+                    let timeoutId = setTimeout(function() {
+             console.log(param1[1]+ "seconde de delais")
+             
+             let timeoutId = setTimeout(function() {
+             console.log(param1[2]+ "seconde de delais")
+             
+             
+        }, param1[2]*1000);
+        }, param1[1]*1000);
+        }, param1[0]*1000);
       
     }
-}
+// }
 
 truc(times)
 
